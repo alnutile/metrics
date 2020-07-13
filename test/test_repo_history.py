@@ -5,6 +5,8 @@ import json
 import unittest
 from src.repo_history import RepoHistory
 import os
+from github import Repository, Requester
+from unittest.mock import MagicMock
 from collections import namedtuple
 from datetime import date, datetime
 script_dir = os.path.dirname(__file__)
@@ -14,6 +16,10 @@ def convert_to_object(data):
     return namedtuple('X', data.keys())(*data.values())
 
 
+with open(os.path.join(script_dir,  "fixtures/prs.json"), 'r') as data:
+    pr = json.load(data)
+
+
 class TestRepoHistory(unittest.TestCase):
 
     def test_loads_env(self):
@@ -21,9 +27,10 @@ class TestRepoHistory(unittest.TestCase):
         client = RepoHistory()
         self.assertIsNotNone(client.token)
 
-    @unittest.skip("Need to mock")
     def test_results_for_repo(self):
         client = RepoHistory()
+        client.client.get_pulls = MagicMock(return_value=Repository.Repository(
+            Requester, [], pr, completed=True))
         results = client.handle("alnutile/blog")
         self.assertIsNotNone(results)
 

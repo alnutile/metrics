@@ -1,6 +1,7 @@
 from github import Github
 from dotenv import load_dotenv
 import os
+import json
 from datetime import date, datetime
 
 """ get histor from prs and transform """
@@ -19,10 +20,13 @@ class RepoHistory:
         """ list repos in account """
         """ iterate on repos """
         """ interate on history """
-        repo = self.client.get_repo(repo_name)
+        repo = self.get_client().get_repo(repo_name)
         for pr in repo.get_pulls():
             self.results.append(self.transform_pr(pr))
         return self.results
+
+    def get_client(self):
+        return self.client
 
     def transform_pr(self, pr):
         data = {}
