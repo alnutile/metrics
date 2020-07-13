@@ -21,7 +21,8 @@ class RepoHistory:
         """ iterate on repos """
         """ interate on history """
         repo = self.get_client().get_repo(repo_name)
-        for pr in repo.get_pulls():
+        for pr in repo.get_pulls(state="closed, open",
+                                 sort="created", direction="desc").get_page(0):
             self.results.append(self.transform_pr(pr))
         return self.results
 
@@ -33,6 +34,7 @@ class RepoHistory:
         data['id'] = pr.id
         data['title'] = pr.title
         data['state'] = pr.state
+        data['number'] = pr.number
         data['labels'] = pr.labels
         data['created_at'] = pr.created_at
         data['created_at'] = pr.created_at

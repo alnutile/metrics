@@ -6,7 +6,7 @@ import unittest
 from src.repo_history import RepoHistory
 import os
 from github import Repository, Requester
-from unittest.mock import MagicMock
+from unittest.mock import MagicMock, patch
 from collections import namedtuple
 from datetime import date, datetime
 script_dir = os.path.dirname(__file__)
@@ -27,9 +27,21 @@ class TestRepoHistory(unittest.TestCase):
         client = RepoHistory()
         self.assertIsNotNone(client.token)
 
-    def test_results_for_repo(self):
+    @unittest.skip("Just to help with understanding the api")
+    def test_real_api(self):
         client = RepoHistory()
-        client.client.get_pulls = MagicMock(return_value=Repository.Repository(
+        results = client.handle("friendsofcat/laravel-feature-flag")
+        """ get defaults """
+        """ open and closed """
+        """ get defaults by reverse """
+        """ sort by created """
+        """ get defaults but only one page reverse """
+        self.assertIsNotNone(results)
+
+    @patch("src.repo_history.Github")
+    def test_results_for_repo(self, mock_github):
+        client = RepoHistory()
+        mock_github.get_pulls = MagicMock(return_value=Repository.Repository(
             Requester, [], pr, completed=True))
         results = client.handle("alnutile/blog")
         self.assertIsNotNone(results)
