@@ -21,6 +21,7 @@ class TestRepoHistory(unittest.TestCase):
         client = RepoHistory()
         self.assertIsNotNone(client.token)
 
+    @unittest.skip("Need to mock")
     def test_results_for_repo(self):
         client = RepoHistory()
         results = client.handle("alnutile/blog")
