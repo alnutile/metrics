@@ -4,6 +4,7 @@ python:
 # command to install dependencies
 install:
   - pip3 install -r requirements.txt
+  - cp .env.example .env
 # command to run tests
 script:
   - python3 -m unittest
