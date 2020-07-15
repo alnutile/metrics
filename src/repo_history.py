@@ -22,7 +22,7 @@ class RepoHistory:
         """ interate on history """
         repo = self.get_client().get_repo(repo_name)
         for pr in repo.get_pulls(state="closed, open",
-                                 sort="created", direction="desc").get_page(0):
+                                 sort="created", direction="desc"):
             self.results.append(self.transform_pr(pr))
         return self.results
 
@@ -37,12 +37,20 @@ class RepoHistory:
         data['number'] = pr.number
         data['labels'] = pr.labels
         data['created_at'] = pr.created_at
-        data['created_at'] = pr.created_at
         data['closed_at'] = pr.closed_at
         data['merged_at'] = pr.merged_at
         data['merge_commit_sha'] = pr.merge_commit_sha
         data['seconds_old'] = self.seconds_old(data)
+        data['created_at'] = self.set_date_to_string(pr.created_at)
+        data['closed_at'] = self.set_date_to_string(pr.closed_at)
+        data['merged_at'] = self.set_date_to_string(pr.merged_at)
         return data
+
+    def set_date_to_string(self, _date):
+        if(_date is not None):
+            return _date.strftime("%m/%d/%Y, %H:%M:%S")
+        else:
+            return None
 
     def seconds_old(self, pr_tranformed):
         """ created_at compared to merged_at or closed_at or today """

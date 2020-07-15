@@ -55,6 +55,7 @@ class TestRepoHistory(unittest.TestCase):
         pr['closed_at'] = None
         results = client.transform_pr(convert_to_object(pr))
         self.assertIsNotNone(results)
+        self.assertEqual('01/24/2011, 19:01:12', results['created_at'])
         self.assertEqual(
             "e5bd3914e2e596debea16f433f57875b5b90bcd6", results['merge_commit_sha'])
 
@@ -66,6 +67,11 @@ class TestRepoHistory(unittest.TestCase):
         pr['created_at'] = datetime.fromisoformat("2011-01-24T19:01:12")
         pr['closed_at'] = None
         pr_tranformed = client.transform_pr(convert_to_object(pr))
+        pr_tranformed['merged_at'] = datetime.fromisoformat(
+            "2011-01-27T19:01:12")
+        pr_tranformed['created_at'] = datetime.fromisoformat(
+            "2011-01-24T19:01:12")
+        pr_tranformed['closed_at'] = None
         seconds = client.seconds_old(pr_tranformed)
         self.assertEqual(259200.0, seconds)
 
@@ -77,6 +83,11 @@ class TestRepoHistory(unittest.TestCase):
         pr['created_at'] = datetime.fromisoformat("2011-01-27T19:01:12")
         pr['closed_at'] = datetime.fromisoformat("2011-01-29T19:01:12")
         pr_tranformed = client.transform_pr(convert_to_object(pr))
+        pr_tranformed['merged_at'] = None
+        pr_tranformed['created_at'] = datetime.fromisoformat(
+            "2011-01-27T19:01:12")
+        pr_tranformed['closed_at'] = datetime.fromisoformat(
+            "2011-01-29T19:01:12")
         seconds = client.seconds_old(pr_tranformed)
         self.assertEqual(172800.0, seconds)
 
@@ -89,6 +100,8 @@ class TestRepoHistory(unittest.TestCase):
         pr['closed_at'] = None
         with freeze_time("2011-01-29T19:01:12"):
             pr_tranformed = client.transform_pr(convert_to_object(pr))
+            pr_tranformed['created_at'] = datetime.fromisoformat(
+                "2011-01-27T19:01:12")
             seconds = client.seconds_old(pr_tranformed)
             self.assertEqual(172800.0, seconds)
 
