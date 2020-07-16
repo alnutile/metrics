@@ -41,6 +41,7 @@ class RepoHistory:
         data['merged_at'] = pr.merged_at
         data['merge_commit_sha'] = pr.merge_commit_sha
         data['seconds_old'] = self.seconds_old(data)
+        data['hours_old'] = (data['seconds_old'] / 3600)
         data['created_at'] = self.set_date_to_string(pr.created_at)
         data['closed_at'] = self.set_date_to_string(pr.closed_at)
         data['merged_at'] = self.set_date_to_string(pr.merged_at)

@@ -55,6 +55,7 @@ class TestRepoHistory(unittest.TestCase):
         pr['closed_at'] = None
         results = client.transform_pr(convert_to_object(pr))
         self.assertIsNotNone(results)
+        self.assertEqual(72.0, results['hours_old'])
         self.assertEqual('01/24/2011, 19:01:12', results['created_at'])
         self.assertEqual(
             "e5bd3914e2e596debea16f433f57875b5b90bcd6", results['merge_commit_sha'])
