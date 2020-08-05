@@ -2,6 +2,7 @@ from github import Github
 from dotenv import load_dotenv
 import os
 import json
+import numpy as np
 from datetime import date, datetime
 
 """ get histor from prs and transform """
@@ -57,6 +58,8 @@ class RepoHistory:
         """ created_at compared to merged_at or closed_at or today """
         created_at = pr_tranformed['created_at']
         if pr_tranformed['merged_at'] is not None:
+            merged_at = pr_tranformed['merged_at']
+            delta = np.busday_count(created_at, merged_at)
             delta = pr_tranformed['merged_at'] - created_at
             return delta.total_seconds()
         elif pr_tranformed['merged_at'] is None and pr_tranformed['closed_at'] is not None:
