@@ -50,31 +50,15 @@ class TestRepoHistory(unittest.TestCase):
         client = RepoHistory()
         with open(os.path.join(script_dir,  "fixtures/pr.json"), 'r') as data:
             pr = json.load(data)
-        pr['merged_at'] = datetime.fromisoformat("2011-01-27T19:01:12")
-        pr['created_at'] = datetime.fromisoformat("2011-01-24T19:01:12")
+        pr['merged_at'] = datetime.fromisoformat("2020-07-20:12:12")
+        pr['created_at'] = datetime.fromisoformat("2020-07-20:09:12")
         pr['closed_at'] = None
         results = client.transform_pr(convert_to_object(pr))
         self.assertIsNotNone(results)
-        self.assertEqual(72.0, results['hours_old'])
-        self.assertEqual('01/24/2011, 19:01:12', results['created_at'])
+        self.assertEqual(3, results['hours_old'])
+        self.assertEqual('07/20/2020, 09:12:00', results['created_at'])
         self.assertEqual(
             "e5bd3914e2e596debea16f433f57875b5b90bcd6", results['merge_commit_sha'])
-
-    def test_seconds_old_has_created_and_merged(self):
-        client = RepoHistory()
-        with open(os.path.join(script_dir,  "fixtures/pr.json"), 'r') as data:
-            pr = json.load(data)
-        pr['merged_at'] = datetime.fromisoformat("2011-01-27T19:01:12")
-        pr['created_at'] = datetime.fromisoformat("2011-01-24T19:01:12")
-        pr['closed_at'] = None
-        pr_tranformed = client.transform_pr(convert_to_object(pr))
-        pr_tranformed['merged_at'] = datetime.fromisoformat(
-            "2011-01-27T19:01:12")
-        pr_tranformed['created_at'] = datetime.fromisoformat(
-            "2011-01-24T19:01:12")
-        pr_tranformed['closed_at'] = None
-        seconds = client.seconds_old(pr_tranformed)
-        self.assertEqual(259200.0, seconds)
 
     def test_seconds_old_has_created_and_closed(self):
         client = RepoHistory()
@@ -90,7 +74,7 @@ class TestRepoHistory(unittest.TestCase):
         pr_tranformed['closed_at'] = datetime.fromisoformat(
             "2011-01-29T19:01:12")
         seconds = client.seconds_old(pr_tranformed)
-        self.assertEqual(172800.0, seconds)
+        self.assertEqual(28800, seconds)
 
     def test_not_closed_or_merged(self):
         client = RepoHistory()
@@ -104,7 +88,7 @@ class TestRepoHistory(unittest.TestCase):
             pr_tranformed['created_at'] = datetime.fromisoformat(
                 "2011-01-27T19:01:12")
             seconds = client.seconds_old(pr_tranformed)
-            self.assertEqual(172800.0, seconds)
+            self.assertEqual(28800, seconds)
 
 
 if __name__ == '__main__':

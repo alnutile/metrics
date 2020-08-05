@@ -2,10 +2,10 @@ from github import Github
 from dotenv import load_dotenv
 import os
 import json
-import numpy as np
 from datetime import date, datetime
+from src.seconds_diff import SecondsDiff
 
-""" get histor from prs and transform """
+""" get history from prs and transform """
 
 
 class RepoHistory:
@@ -13,6 +13,7 @@ class RepoHistory:
 
     def __init__(self):
         load_dotenv()
+        self.seconds_diff = SecondsDiff()
         self.token = os.environ.get("GITHUB_ACCESS_TOKEN")
         self.client = Github(self.token)
 
@@ -58,13 +59,8 @@ class RepoHistory:
         """ created_at compared to merged_at or closed_at or today """
         created_at = pr_tranformed['created_at']
         if pr_tranformed['merged_at'] is not None:
-            merged_at = pr_tranformed['merged_at']
-            delta = np.busday_count(created_at, merged_at)
-            delta = pr_tranformed['merged_at'] - created_at
-            return delta.total_seconds()
+            return self.seconds_diff.office_time_between(created_at, pr_tranformed['merged_at'])
         elif pr_tranformed['merged_at'] is None and pr_tranformed['closed_at'] is not None:
-            delta = pr_tranformed['closed_at'] - created_at
-            return delta.total_seconds()
+            return self.seconds_diff.office_time_between(created_at, pr_tranformed['closed_at'])
         else:
-            delta = datetime.now() - created_at
-            return delta.total_seconds()
+            return self.seconds_diff.office_time_between(created_at, datetime.now())

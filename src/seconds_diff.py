@@ -1,5 +1,7 @@
 from datetime import datetime, timedelta
 
+""" https://codereview.stackexchange.com/questions/18053/seconds-between-datestimes-excluding-weekends-and-evenings """
+
 
 class SecondsDiff:
     def clamp(self, t, start, end):
@@ -33,4 +35,4 @@ class SecondsDiff:
             total -= self.clamp(self.day_part(a) - start, zero, office_day)
         if b.weekday() < 5:
             total -= self.clamp(stop - self.day_part(b), zero, office_day)
-        return total
+        return total.seconds
