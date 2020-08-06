@@ -40,3 +40,10 @@ pip3 install -r requirements.txt
 cp .env.example .env
 ```
 Then get a github token that can read the PR history
+
+
+##  Running Script
+
+```
+python3 ./repo_report.py owner/repo_name
+```
