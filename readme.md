@@ -32,3 +32,11 @@ Using the numbers above we then look for labels
 
 Using the MTTR we can then tie the `merge_commit_sha` to a previous SHA and therefore related deployment.
 Then we can figure out total deployments vs these related items
+
+## Setup
+
+```
+pip3 install -r requirements.txt
+cp .env.example .env
+```
+Then get a github token that can read the PR history
