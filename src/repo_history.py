@@ -43,7 +43,6 @@ class RepoHistory:
         data['merged_at'] = pr.merged_at
         data['merge_commit_sha'] = pr.merge_commit_sha
         data['seconds_old'] = self.seconds_old(data)
-        data['hours_old'] = (data['seconds_old'] / 3600)
         data['created_at'] = self.set_date_to_string(pr.created_at)
         data['closed_at'] = self.set_date_to_string(pr.closed_at)
         data['merged_at'] = self.set_date_to_string(pr.merged_at)
@@ -59,8 +58,10 @@ class RepoHistory:
         """ created_at compared to merged_at or closed_at or today """
         created_at = pr_tranformed['created_at']
         if pr_tranformed['merged_at'] is not None:
-            return self.seconds_diff.office_time_between(created_at, pr_tranformed['merged_at'])
+            """ self.seconds_diff.office_time_between(created_at, pr_tranformed['merged_at']) """
+            return self.seconds_diff.total_time_between(created_at, pr_tranformed['merged_at'])
         elif pr_tranformed['merged_at'] is None and pr_tranformed['closed_at'] is not None:
-            return self.seconds_diff.office_time_between(created_at, pr_tranformed['closed_at'])
+            """ //self.seconds_diff.office_time_between(created_at, pr_tranformed['closed_at']) """
+            return self.seconds_diff.total_time_between(created_at, pr_tranformed['closed_at'])
         else:
-            return self.seconds_diff.office_time_between(created_at, datetime.now())
+            return self.seconds_diff.total_time_between(created_at, datetime.utcnow())

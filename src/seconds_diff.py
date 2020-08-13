@@ -36,3 +36,7 @@ class SecondsDiff:
         if b.weekday() < 5:
             total -= self.clamp(stop - self.day_part(b), zero, office_day)
         return total.seconds
+
+    def total_time_between(self, a, b):
+        total = b - a
+        return total

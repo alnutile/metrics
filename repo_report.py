@@ -1,5 +1,6 @@
 from src.repo_history import RepoHistory
 from src.csv_report import CSVReport
+from src.json_report import JSONReport
 import json
 import sys
 
@@ -11,4 +12,6 @@ if __name__ == "__main__":
     print("Got data from Github creating report")
     client = CSVReport()
     client.process(results)
+    output = JSONReport()
+    output.process(results)
     print("See report.csv for the results")
