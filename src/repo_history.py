@@ -2,7 +2,7 @@ from github import Github
 from dotenv import load_dotenv
 import os
 import json
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 from src.seconds_diff import SecondsDiff
 
 """ get history from prs and transform """
@@ -17,13 +17,13 @@ class RepoHistory:
         self.token = os.environ.get("GITHUB_ACCESS_TOKEN")
         self.client = Github(self.token)
 
-    def handle(self, repo_name):
+    def handle(self, repo_name, state):
         """ scan repo and get history """
         """ list repos in account """
         """ iterate on repos """
         """ interate on history """
         repo = self.get_client().get_repo(repo_name)
-        for pr in repo.get_pulls(state="all",
+        for pr in repo.get_pulls(state=state,
                                  sort="created", direction="desc"):
             self.results.append(self.transform_pr(pr))
         return self.results
@@ -42,7 +42,8 @@ class RepoHistory:
         data['closed_at'] = pr.closed_at
         data['merged_at'] = pr.merged_at
         data['merge_commit_sha'] = pr.merge_commit_sha
-        data['seconds_old'] = self.seconds_old(data)
+        data['duration'] = self.seconds_old(data)
+        data["seconds"] = data["duration"].total_seconds()
         data['created_at'] = self.set_date_to_string(pr.created_at)
         data['closed_at'] = self.set_date_to_string(pr.closed_at)
         data['merged_at'] = self.set_date_to_string(pr.merged_at)
