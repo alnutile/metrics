@@ -10,7 +10,7 @@
         "closed_at": null,
         "merged_at": null,
         "merge_commit_sha": "f5d3dda80eeee50b2ba8c230bf005592990891f5",
-        "seconds_old": "13 days, 23:40:13.863858"
+        "seconds_old": "14 days, 0:15:25.367306"
     },
     {
         "id": 473713805,
@@ -25,7 +25,7 @@
         "closed_at": null,
         "merged_at": null,
         "merge_commit_sha": "530a42a90b2b36aeb150b41dd0f5825896a1b8e6",
-        "seconds_old": "26 days, 4:29:34.863895"
+        "seconds_old": "26 days, 5:04:46.367342"
     },
     {
         "id": 469449528,
@@ -38,7 +38,7 @@
         "closed_at": null,
         "merged_at": null,
         "merge_commit_sha": "2b040fee30377b99849095feba5f26ef3a5bbffe",
-        "seconds_old": "34 days, 0:10:25.863913"
+        "seconds_old": "34 days, 0:45:37.367365"
     },
     {
         "id": 467977141,
@@ -808,7 +808,7 @@
         "closed_at": null,
         "merged_at": null,
         "merge_commit_sha": "d85f8634b39d46ea539c4342e912e1782a8b76d1",
-        "seconds_old": "94 days, 0:00:49.843649"
+        "seconds_old": "94 days, 0:36:01.270780"
     },
     {
         "id": 437030406,
@@ -1029,7 +1029,7 @@
         "closed_at": null,
         "merged_at": null,
         "merge_commit_sha": "8c40c255d352c250997b44a597c7641af1d5fac1",
-        "seconds_old": "101 days, 21:19:50.844019"
+        "seconds_old": "101 days, 21:55:02.271156"
     },
     {
         "id": 433035131,
@@ -1081,7 +1081,7 @@
         "closed_at": null,
         "merged_at": null,
         "merge_commit_sha": "98d0fafb3f9f2a9c5a81ca13347c945a8636f46e",
-        "seconds_old": "104 days, 3:15:33.844092"
+        "seconds_old": "104 days, 3:50:45.271229"
     },
     {
         "id": 431387216,
@@ -1932,7 +1932,7 @@
         "closed_at": null,
         "merged_at": null,
         "merge_commit_sha": "99dc54291e526c0ff3d138b8a27c7b756366b817",
-        "seconds_old": "135 days, 22:36:47.314156"
+        "seconds_old": "135 days, 23:11:58.278535"
     },
     {
         "id": 414912875,
@@ -2177,7 +2177,7 @@
         "closed_at": null,
         "merged_at": null,
         "merge_commit_sha": "01c6d06f4528d6c620f7dbb42c633869a5200031",
-        "seconds_old": "140 days, 1:42:07.577403"
+        "seconds_old": "140 days, 2:17:18.545716"
     },
     {
         "id": 412271050,
@@ -2808,7 +2808,7 @@
         "closed_at": null,
         "merged_at": null,
         "merge_commit_sha": "25f60fb1e0bba1ba0adfc56aba386994f63f402c",
-        "seconds_old": "188 days, 18:37:34.437299"
+        "seconds_old": "188 days, 19:12:45.665154"
     },
     {
         "id": 389174157,
@@ -2847,7 +2847,7 @@
         "closed_at": null,
         "merged_at": null,
         "merge_commit_sha": "f5bb7a07d94c152e3ef0615e7f0ab06a247270d6",
-        "seconds_old": "191 days, 21:56:25.437361"
+        "seconds_old": "191 days, 22:31:36.665225"
     },
     {
         "id": 387397082,
@@ -2925,7 +2925,7 @@
         "closed_at": null,
         "merged_at": null,
         "merge_commit_sha": "b281954b1fb7206d658b2dca8158f37bc7aa3cd8",
-        "seconds_old": "193 days, 18:34:56.437478"
+        "seconds_old": "193 days, 19:10:07.665373"
     },
     {
         "id": 386742006,
@@ -3430,7 +3430,7 @@
         "closed_at": null,
         "merged_at": null,
         "merge_commit_sha": "326bea98e0ce21f2d44882a01b3d17ea562a0772",
-        "seconds_old": "206 days, 19:10:27.414895"
+        "seconds_old": "206 days, 19:45:38.672600"
     },
     {
         "id": 380939937,
@@ -3443,7 +3443,7 @@
         "closed_at": null,
         "merged_at": null,
         "merge_commit_sha": "baf1b403b209743a89af3dd2e2440638c33ebe03",
-        "seconds_old": "206 days, 19:50:16.414911"
+        "seconds_old": "206 days, 20:25:27.672615"
     },
     {
         "id": 380918985,
@@ -4969,7 +4969,7 @@
         "closed_at": null,
         "merged_at": null,
         "merge_commit_sha": "cb5d4a4186e74c340570f0e91f793fa42947d021",
-        "seconds_old": "262 days, 21:25:49.480730"
+        "seconds_old": "262 days, 22:01:02.208714"
     },
     {
         "id": 358669748,
@@ -4985,7 +4985,7 @@
         "closed_at": null,
         "merged_at": null,
         "merge_commit_sha": "14e74140288287b94e4070139654cabb3954233a",
-        "seconds_old": "262 days, 22:00:40.480746"
+        "seconds_old": "262 days, 22:35:53.208731"
     },
     {
         "id": 358622507,
@@ -7007,5 +7007,18 @@
         "merged_at": "09/09/2019, 13:03:09",
         "merge_commit_sha": "7ef29c85d0ec85b66a676f38fd66024541650cbf",
         "seconds_old": "9 days, 16:35:32"
+    },
+    {
+        "id": "23523525",
+        "jira_ticket": "TEST",
+        "title": "TEST",
+        "state": "",
+        "number": "",
+        "labels": "",
+        "created_at": "",
+        "closed_at": "",
+        "merged_at": "",
+        "merge_commit_sha": "",
+        "seconds_old": ""
     }
 ]
