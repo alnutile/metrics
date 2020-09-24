@@ -23,13 +23,14 @@ class RepoHistory:
         """ list repos in account """
         """ iterate on repos """
         """ interate on history """
-
+        report_name = repo_name.replace("pfizer/", "")
+        report_name = "report-" + report_name + "-" + state + ".csv"
         repo = self.get_client().get_repo(repo_name)
         for pr in repo.get_pulls(state=state,
                                  sort="created", direction="desc"):
             self.results.append(self.transform_pr(pr))
         # return the updated list to overwrite the previous one
-        return self.update_lists(self.create_old_csv_dict(), self.results)
+        return self.update_lists(self.create_old_csv_dict(report_name), self.results)
 
     def get_client(self):
         return self.client
@@ -78,8 +79,8 @@ class RepoHistory:
 
     # read the previous csv in same format as github json
 
-    def create_old_csv_dict(self):
-        with open('report.csv', 'r') as read_obj:
+    def create_old_csv_dict(self, report_name):
+        with open(report_name, 'r') as read_obj:
             # pass the file object to DictReader() to get the DictReader object
             dict_reader = DictReader(read_obj)
             # get a list of dictionaries from dct_reader
