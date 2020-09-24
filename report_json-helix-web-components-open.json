@@ -1,0 +1,480 @@
+[
+    {
+        "id": 476561487,
+        "title": "[SELFP-1139] ms-email enhancement -Addition of new config for ms-email-recipient",
+        "state": "open",
+        "number": 726,
+        "labels": [
+            "Label(name=\"enhancement\")",
+            "Label(name=\"semver-minor\")"
+        ],
+        "created_at": "08/31/2020, 21:54:16",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "4251b87db0562babf0149c8c3fd4c59a9a79fede",
+        "seconds_old": "14:33:07.878695"
+    },
+    {
+        "id": 476324540,
+        "title": "[HWC-657] Stacked Mega Menu",
+        "state": "open",
+        "number": 723,
+        "labels": [
+            "Label(name=\"enhancement\")",
+            "Label(name=\"semver-minor\")"
+        ],
+        "created_at": "08/31/2020, 14:10:58",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "01b77198ea805470fc004ec2cefc417dcc7d72eb",
+        "seconds_old": "22:16:25.878731"
+    },
+    {
+        "id": 476187379,
+        "title": "[SELFP-1138] ms-email enhancement -Addition of new ui elements",
+        "state": "open",
+        "number": 722,
+        "labels": [
+            "Label(name=\"enhancement\")",
+            "Label(name=\"semver-minor\")"
+        ],
+        "created_at": "08/31/2020, 09:49:40",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "d435b633ba04afa4280979bcee4d993ead0f206f",
+        "seconds_old": "1 day, 2:37:43.878748"
+    },
+    {
+        "id": 475482478,
+        "title": "[HWC-689] - Update stories no results to match designs",
+        "state": "open",
+        "number": 721,
+        "labels": [
+            "Label(name=\"semver-bugfix\")"
+        ],
+        "created_at": "08/28/2020, 15:47:18",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "67da1830929476bad812a41bca35535a0daaf5ee",
+        "seconds_old": "3 days, 20:40:05.878763"
+    },
+    {
+        "id": 475420695,
+        "title": "[HWC-628] Remove Helix Responsive Table",
+        "state": "open",
+        "number": 720,
+        "labels": [
+            "Label(name=\"enhancement\")"
+        ],
+        "created_at": "08/28/2020, 13:54:46",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "d7ff546cdbfa3b837466ebc6a0a82983d44e4708",
+        "seconds_old": "3 days, 22:32:37.878778"
+    },
+    {
+        "id": 475338235,
+        "title": "[HWC-688] - Update search results title to not show EM tags and remove bold",
+        "state": "open",
+        "number": 719,
+        "labels": [
+            "Label(name=\"bug\")",
+            "Label(name=\"semver-bugfix\")"
+        ],
+        "created_at": "08/28/2020, 11:00:38",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "815b412f2f3d7924db4aef18210d9b50c74449da",
+        "seconds_old": "4 days, 1:26:45.878792"
+    },
+    {
+        "id": 475014325,
+        "title": "[SELFP-1145] added load config feature for PMAP",
+        "state": "open",
+        "number": 717,
+        "labels": [],
+        "created_at": "08/28/2020, 00:12:42",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "a38bd2b3a3650e0dcaffcf3ad1847d368dc880f1",
+        "seconds_old": "4 days, 12:14:41.878809"
+    },
+    {
+        "id": 474878918,
+        "title": "HWC-352: Helix Band with New Theming",
+        "state": "open",
+        "number": 716,
+        "labels": [
+            "Label(name=\"next\")"
+        ],
+        "created_at": "08/27/2020, 18:37:44",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "aade72eafba9c95b917b89e89983bf67fd8a76ca",
+        "seconds_old": "4 days, 17:49:39.878824"
+    },
+    {
+        "id": 474768598,
+        "title": "HWC-359-Helix Feature with New Theming",
+        "state": "open",
+        "number": 714,
+        "labels": [
+            "Label(name=\"next\")"
+        ],
+        "created_at": "08/27/2020, 15:11:47",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "f43cbb71ae47915347825e4f67b0613db6fa78d7",
+        "seconds_old": "4 days, 21:15:36.878838"
+    },
+    {
+        "id": 474612398,
+        "title": "[SELFP-1231] Added test cases for ePermissions",
+        "state": "open",
+        "number": 711,
+        "labels": [
+            "Label(name=\"semver-minor\")"
+        ],
+        "created_at": "08/27/2020, 10:43:02",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "643f07ad203eabb36c9d2e7a6562919a21baf45e",
+        "seconds_old": "5 days, 1:44:21.878877"
+    },
+    {
+        "id": 474117050,
+        "title": "HWC-360- Helix Media Block with New Theming",
+        "state": "open",
+        "number": 708,
+        "labels": [
+            "Label(name=\"next\")"
+        ],
+        "created_at": "08/26/2020, 19:46:25",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "8997f7478338ea7c79cd9c118afcd89e2322a540",
+        "seconds_old": "5 days, 16:40:58.878894"
+    },
+    {
+        "id": 473260907,
+        "title": "HWC-349, HW-393, HWC-394-Helix Header, Helix Primary Nav, Helix Global Nav with New Theming",
+        "state": "open",
+        "number": 702,
+        "labels": [
+            "Label(name=\"WIP\")"
+        ],
+        "created_at": "08/25/2020, 14:49:43",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "160435d6779a6c52dfde66e93fc197fa3b5a8da5",
+        "seconds_old": "6 days, 21:37:40.878908"
+    },
+    {
+        "id": 470154250,
+        "title": "HWC-641: Helix Page Header with New Theming",
+        "state": "open",
+        "number": 689,
+        "labels": [
+            "Label(name=\"WIP\")",
+            "Label(name=\"next\")"
+        ],
+        "created_at": "08/19/2020, 13:10:30",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "3a371d9aad89d506b083f1cc2b61b634e2ef66a2",
+        "seconds_old": "12 days, 23:16:53.878921"
+    },
+    {
+        "id": 468061780,
+        "title": "HWC-350: Helix Footer with Theming",
+        "state": "open",
+        "number": 680,
+        "labels": [
+            "Label(name=\"next\")"
+        ],
+        "created_at": "08/14/2020, 15:59:23",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "6793d6b718cb63e1da928a82c0f85d01da1bb06f",
+        "seconds_old": "17 days, 20:28:00.878935"
+    },
+    {
+        "id": 467928902,
+        "title": "HWC-546: Helix Stacked Block with New Theming",
+        "state": "open",
+        "number": 678,
+        "labels": [
+            "Label(name=\"next\")"
+        ],
+        "created_at": "08/14/2020, 11:21:52",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "c49504e83098bba4a68fb2d56bf67aa20754f215",
+        "seconds_old": "18 days, 1:05:31.878949"
+    },
+    {
+        "id": 467915958,
+        "title": "HWC-391: Helix Heading with New Theming",
+        "state": "open",
+        "number": 677,
+        "labels": [
+            "Label(name=\"next\")"
+        ],
+        "created_at": "08/14/2020, 10:51:28",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "adc13a1b47bb6c044301ae5db94ddc75cc2c7c2e",
+        "seconds_old": "18 days, 1:35:55.878962"
+    },
+    {
+        "id": 467907918,
+        "title": "HWC-361: Helix Link List with New Theming",
+        "state": "open",
+        "number": 676,
+        "labels": [
+            "Label(name=\"WIP\")",
+            "Label(name=\"next\")"
+        ],
+        "created_at": "08/14/2020, 10:32:19",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "f38ab70abcaee49605b50bdffc3301f5750fb1f5",
+        "seconds_old": "18 days, 1:55:04.878975"
+    },
+    {
+        "id": 467887851,
+        "title": "HWC-362 Helix Logo with New Theming",
+        "state": "open",
+        "number": 675,
+        "labels": [
+            "Label(name=\"WIP\")",
+            "Label(name=\"next\")"
+        ],
+        "created_at": "08/14/2020, 09:48:51",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "7d6989b718ba5cf214e6503a2b02501369318805",
+        "seconds_old": "18 days, 2:38:32.878989"
+    },
+    {
+        "id": 467481568,
+        "title": "Feature/shallow theming",
+        "state": "open",
+        "number": 674,
+        "labels": [
+            "Label(name=\"WIP\")"
+        ],
+        "created_at": "08/13/2020, 16:05:07",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": null,
+        "seconds_old": "18 days, 20:22:16.879002"
+    },
+    {
+        "id": 467400765,
+        "title": "[HWC-645] <helix-card> Theming refinements ",
+        "state": "open",
+        "number": 672,
+        "labels": [
+            "Label(name=\"enhancement\")",
+            "Label(name=\"semver-major\")"
+        ],
+        "created_at": "08/13/2020, 13:53:29",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "58103c344869e4055977a34f82adb4c7ec11674d",
+        "seconds_old": "18 days, 22:33:54.879017"
+    },
+    {
+        "id": 464779332,
+        "title": "HWC-351: Helix Button Group with New Theming",
+        "state": "open",
+        "number": 665,
+        "labels": [
+            "Label(name=\"WIP\")",
+            "Label(name=\"next\")"
+        ],
+        "created_at": "08/07/2020, 19:22:46",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "c5ac676bf80756a633b633c3731fa688b13280db",
+        "seconds_old": "24 days, 17:04:37.879031"
+    },
+    {
+        "id": 464675766,
+        "title": "HWC-364 Helix Section with New Theming",
+        "state": "open",
+        "number": 663,
+        "labels": [
+            "Label(name=\"next\")"
+        ],
+        "created_at": "08/07/2020, 15:46:50",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "c0cc0dcb2d2ad584669b065c3a551ea46cfd1799",
+        "seconds_old": "24 days, 20:40:33.879044"
+    },
+    {
+        "id": 464304593,
+        "title": "[No Ticket] Add a way to not submit form-v2 to the service.",
+        "state": "open",
+        "number": 661,
+        "labels": [
+            "Label(name=\"enhancement\")",
+            "Label(name=\"needs discussion\")",
+            "Label(name=\"semver-minor\")"
+        ],
+        "created_at": "08/06/2020, 23:06:06",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "e3163f3e2caedd9d4e8f14d26d04601bcb3ea931",
+        "seconds_old": "25 days, 13:21:17.879058"
+    },
+    {
+        "id": 463278336,
+        "title": "[HWC-499][d] helix-dropdown respin ",
+        "state": "open",
+        "number": 654,
+        "labels": [
+            "Label(name=\"WIP\")"
+        ],
+        "created_at": "08/05/2020, 09:58:13",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "35e1d8c0f836bec5e24be6597c5ef10828c1a74d",
+        "seconds_old": "27 days, 2:29:10.879071"
+    },
+    {
+        "id": 463232913,
+        "title": "[HWC-87] Helix Calendar Work",
+        "state": "open",
+        "number": 653,
+        "labels": [
+            "Label(name=\"WIP\")"
+        ],
+        "created_at": "08/05/2020, 08:31:38",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": null,
+        "seconds_old": "27 days, 3:55:45.879084"
+    },
+    {
+        "id": 459378165,
+        "title": "[OPS] Theming refinements",
+        "state": "open",
+        "number": 641,
+        "labels": [
+            "Label(name=\"enhancement\")",
+            "Label(name=\"semver-minor\")"
+        ],
+        "created_at": "07/30/2020, 16:37:36",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "28f72a4acf2625c5430dc9e20152ce1d3ab01fea",
+        "seconds_old": "32 days, 19:49:47.879097"
+    },
+    {
+        "id": 457874051,
+        "title": "[HWC-530] Slideshow",
+        "state": "open",
+        "number": 633,
+        "labels": [
+            "Label(name=\"enhancement\")",
+            "Label(name=\"semver-major\")"
+        ],
+        "created_at": "07/28/2020, 15:08:39",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "721d0160b5cc7c8767a2baef0334cbf63af3065e",
+        "seconds_old": "34 days, 21:18:44.879110"
+    },
+    {
+        "id": 447626211,
+        "title": "[OPS] Update stencil to latest",
+        "state": "open",
+        "number": 590,
+        "labels": [
+            "Label(name=\"enhancement\")"
+        ],
+        "created_at": "07/10/2020, 20:17:31",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "4310353f9c923e33355ee032a436eb05d0e8e0fd",
+        "seconds_old": "52 days, 16:09:52.879122"
+    },
+    {
+        "id": 437819892,
+        "title": "Feature/hwc 283 plop",
+        "state": "open",
+        "number": 556,
+        "labels": [
+            "Label(name=\"enhancement\")",
+            "Label(name=\"semver-none\")"
+        ],
+        "created_at": "06/22/2020, 09:49:19",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "aeaeaba0166dd6825cfb461e1b52f3fb6675c292",
+        "seconds_old": "71 days, 2:38:04.879135"
+    },
+    {
+        "id": 435767214,
+        "title": "Fixing badge tests",
+        "state": "open",
+        "number": 543,
+        "labels": [
+            "Label(name=\"awaiting secondary review\")",
+            "Label(name=\"question\")"
+        ],
+        "created_at": "06/17/2020, 10:47:27",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "b9d8295adf1cc03b1cb15f3ac0cba332719f7b31",
+        "seconds_old": "76 days, 1:39:56.879147"
+    },
+    {
+        "id": 431854089,
+        "title": "[HWC-339] Adding storyshots support",
+        "state": "open",
+        "number": 521,
+        "labels": [
+            "Label(name=\"infrastructure\")",
+            "Label(name=\"needs discussion\")",
+            "Label(name=\"on-hold\")",
+            "Label(name=\"semver-none\")"
+        ],
+        "created_at": "06/09/2020, 14:50:15",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "70dbfee6e1881aa1c1753262e706d097fb328ce6",
+        "seconds_old": "83 days, 21:37:09.377579"
+    },
+    {
+        "id": 428409842,
+        "title": "[HWC-406] Remove logic to highlight title of search card",
+        "state": "open",
+        "number": 504,
+        "labels": [
+            "Label(name=\"semver-major\")"
+        ],
+        "created_at": "06/05/2020, 12:06:47",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "b09a780880ec3c435d99e564b803b75985dbb8e2",
+        "seconds_old": "88 days, 0:20:37.377617"
+    },
+    {
+        "id": 393469221,
+        "title": "Fixed SELFP-497, due to missing validators property in form config",
+        "state": "open",
+        "number": 395,
+        "labels": [
+            "Label(name=\"semver-major\")"
+        ],
+        "created_at": "03/25/2020, 09:11:54",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "8dd2a34915a2bba1d1388a0cbadf842276d2b5f7",
+        "seconds_old": "160 days, 3:15:30.377635"
+    }
+]

@@ -3,10 +3,11 @@ import csv
 
 class CSVReport():
 
-    def process(self, json_report):
+    def process(self, json_report, filename):
         """ take the data and process it """
         """ iterate over and convert """
-        with open("report.csv", "w", newline='') as report:
+        report_name = "report-" + filename + ".csv"
+        with open(report_name, "w", newline='') as report:
             writer = csv.writer(report, delimiter=",")
             writer.writerow(json_report[0].keys())
             for items in json_report:
