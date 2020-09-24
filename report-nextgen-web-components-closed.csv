@@ -1,7 +1,8 @@
-id,jira_ticket,title,state,number,labels,created_at,closed_at,merged_at,merge_commit_sha,seconds_old
-481345041,NP-2602, Fix to Changelog - NP2602 is in the wrong place.,open,530,[],"09/07/2020, 12:26:32",,,f5d3dda80eeee50b2ba8c230bf005592990891f5,"16 days, 22:13:03.324678"
-473713805,NP-2775, GRV Storybook for Login.,open,529,"[Label(name=""Do not merge"")]","08/26/2020, 07:37:11",,,530a42a90b2b36aeb150b41dd0f5825896a1b8e6,"29 days, 3:02:24.324695"
-469449528,NP-2820, My Account edit professional issues fix,open,528,[],"08/18/2020, 11:56:20",,,2b040fee30377b99849095feba5f26ef3a5bbffe,"36 days, 22:43:15.324711"
+id,jira_ticket,title,state,number,labels,created_at,closed_at,merged_at,merge_commit_sha,duration,seconds
+491608164,CHORE-0, Release 8.0.0 of @pfizer/nextgen-web-components.,closed,534,[],"09/23/2020, 08:30:46","09/23/2020, 09:05:21","09/23/2020, 09:05:20",2a90fb213710d9c3fcc551114658472bad3d647b,0:34:34,2074.0
+491005463,HS2-2781, Port HS2-2675 to NextGen Web Components,closed,533,[],"09/22/2020, 15:02:45","09/22/2020, 15:44:20","09/22/2020, 15:44:19",9e8bc8bc688bc58d620f0a2188a49136512989bb,0:41:34,2494.0
+490989263,HS2-2780, Upgrade to Helix Web Components 5.2.0,closed,532,[],"09/22/2020, 14:39:35","09/22/2020, 15:14:01","09/22/2020, 15:14:01",4a3efc5000f1ad75d20769406a414010af018525,0:34:26,2066.0
+490986925,HS2-2779, Port Persistent ISI display changes from Helix Extras,closed,531,[],"09/22/2020, 14:36:17","09/23/2020, 08:24:27","09/23/2020, 08:24:27",0b07e7e56418c72176812e364bf95e0135d2c531,17:48:10,64090.0
 467977141,NP-3185, RELEASE: @pfizer/nextgen-web-components version 7.0.1,closed,527,[],"08/14/2020, 13:13:36","08/14/2020, 13:29:37","08/14/2020, 13:29:37",6a81993f76f7698b0857189d6567438bf479cee5,0:16:01,961.0
 467903291,NP-2602, Update to send First Name to licence validator.,closed,526,"[Label(name=""Do not merge""), Label(name=""enhancement"")]","08/14/2020, 10:22:39","09/04/2020, 13:30:46","09/04/2020, 13:30:46",43de536b3c76d7ba66506e9d622ecc15364f1581,"21 days, 3:08:07",1825687.0
 465930041,HS2-2388, Release @pfizer/nextgen-web-components v7.0.0.,closed,525,[],"08/11/2020, 07:44:51","08/11/2020, 08:19:21","08/11/2020, 08:19:21",3fe48a394e28986178d5759ab7db7bd262e7605d,0:34:30,2070.0
@@ -59,7 +60,6 @@ id,jira_ticket,title,state,number,labels,created_at,closed_at,merged_at,merge_co
 437957091,NP-2942, RELEASE @pfizer/nextgen-web-components version 5.2.0.,closed,473,[],"06/22/2020, 13:49:34","06/22/2020, 14:00:59","06/22/2020, 14:00:58",1d35d28f39dd151bea76d4092662f873c81008ad,0:11:24,684.0
 437844430,-,Hs21917,closed,472,[],"06/22/2020, 10:30:22","06/24/2020, 09:02:47","06/24/2020, 09:02:47",a208ecf3413bcfdd97da3e491eb420f7e804020f,"1 day, 22:32:25",167545.0
 437207517,HS2-1928, <isi-utility-nav> Clean up padding in and around the navigation,closed,471,[],"06/19/2020, 16:56:13","06/22/2020, 11:40:45","06/22/2020, 11:40:45",266a52a5576beec941b7fb5b19cd0aa755d5589a,"2 days, 18:44:32",240272.0
-437064165,NP-2766, Material listing card,open,470,[],"06/19/2020, 12:05:58",,,d85f8634b39d46ea539c4342e912e1782a8b76d1,"96 days, 22:33:39.347247"
 437030406,HS2-1909, Alternate approach to Disabled vars,closed,469,[],"06/19/2020, 10:46:15","06/19/2020, 11:24:52","06/19/2020, 11:24:52",036ac0ed7a1a46e4289b7abf0060ba9fd2ebadba,0:38:37,2317.0
 436734639,GRV-3144, - Configure the CNAME value within the OIDC Stencil Component,closed,468,[],"06/18/2020, 20:02:25","06/26/2020, 19:10:48","06/26/2020, 19:10:48",37ca1312af6b51e4dfe357bc7be925e2e602726b,"7 days, 23:08:23",688103.0
 436373680,HS2-1909, <nextgen-button> does not support a disabled state,closed,467,[],"06/18/2020, 10:18:59","07/01/2020, 17:00:40","07/01/2020, 17:00:39",6c9b9c912f5fd874fd1d643f03d084b9ca667567,"13 days, 6:41:40",1147300.0
@@ -76,11 +76,9 @@ id,jira_ticket,title,state,number,labels,created_at,closed_at,merged_at,merge_co
 433211029,HS2-1767, Add css mode to nextgen-responsive,closed,456,[],"06/11/2020, 16:52:00","06/12/2020, 18:35:34","06/12/2020, 18:35:34",c9c6d6838ee54b229828798b4ec44e9e0cb06e69,"1 day, 1:43:34",92614.0
 433185591,HS2-1721, Mobile Utility Nav : Incorrect spacing between 'Prescribing Information' and 'Patient Site',closed,455,[],"06/11/2020, 16:04:45","06/12/2020, 09:09:45","06/12/2020, 09:09:45",68011b699313bb151100f4c6165df89704980c42,17:05:00,61500.0
 433176848,HS2-1720, Samsung Internet Browser : Content display issue on Eucrisa pages,closed,454,[],"06/11/2020, 15:49:52","06/11/2020, 16:28:41","06/11/2020, 16:28:41",96ff95ed956f2ca959d5c26720a1a65a43f07524,0:38:49,2329.0
-433130682,HS2-1889, add an optional top header slot with styling,open,453,[],"06/11/2020, 14:46:57",,,8c40c255d352c250997b44a597c7641af1d5fac1,"104 days, 19:52:40.347662"
 433035131,HS2-1722, getBoundingClientRect to fix MM modal mobile positioning,closed,452,[],"06/11/2020, 12:13:44","06/11/2020, 17:33:18","06/11/2020, 17:33:18",8c949518c17cdd78761c69ba870c588efce09512,5:19:34,19174.0
 432492287,HS2-1823, Therapy Area Product Listing PoC,closed,451,[],"06/10/2020, 14:23:52","07/09/2020, 18:02:29",,1513936be74f1f9faaa135e65f7079fca73758ff,"29 days, 3:38:37",2518717.0
 431934793,NP-2846, Release 5.0.1 of @pfizer/nextgen-web-components.,closed,450,[],"06/09/2020, 16:46:17","06/09/2020, 17:19:32","06/09/2020, 17:19:32",4e7e8cf8a35eae505f2f12a08c586751d1ca697a,0:33:15,1995.0
-431635733,NP-2825, Nextgen Chart prepare for canvas,open,449,[],"06/09/2020, 08:51:14",,,98d0fafb3f9f2a9c5a81ca13347c945a8636f46e,"107 days, 1:48:23.347749"
 431387216,NP-2844, @pfizer/helix-web-components upgraded to 1.8.0.,closed,448,[],"06/08/2020, 20:45:03","06/09/2020, 13:55:42","06/09/2020, 13:55:42",001725d99dbacd1e765ff86ead483ba291ac7f49,17:10:39,61839.0
 431081005,NP-2763, Add a provisional interface for the material ordering material.,closed,447,[],"06/08/2020, 11:58:44","06/10/2020, 09:58:30","06/10/2020, 09:58:29",ad67b8f429e261d96e08a9237291305fcd0f2258,"1 day, 21:59:45",165585.0
 428561881,-,Pending tests,closed,446,[],"06/05/2020, 16:26:13","06/09/2020, 13:26:58","06/09/2020, 13:26:58",8d1775df97b2d453bc6244dc8d2714ade924eaf4,"3 days, 21:00:45",334845.0
@@ -145,7 +143,6 @@ id,jira_ticket,title,state,number,labels,created_at,closed_at,merged_at,merge_co
 416032267,NP-2651, - Feature branch to test all tickets,closed,387,[],"05/11/2020, 11:04:24","05/11/2020, 17:45:56",,335dec6e8e6d541b554a67ad7aa5719863bb3400,6:41:32,24092.0
 415997617,NP-2642, GRV lib migration & HWC update,closed,386,"[Label(name=""Do not merge"")]","05/11/2020, 10:00:18","05/14/2020, 17:43:27","05/14/2020, 17:43:27",5e665a78b43b80312aa9c176a25b3f42f89c881d,"3 days, 7:43:09",286989.0
 415928390,HS2-1662, Add developer instruction for example.md creation,closed,385,[],"05/11/2020, 07:47:55","05/13/2020, 14:27:59","05/13/2020, 14:27:59",910223f6103c9aa6a24b76c5669aac6c5b349520,"2 days, 6:40:04",196804.0
-415236246,HS2-1696, Creating nextgen-search components,open,384,[],"05/08/2020, 13:30:03",,,99dc54291e526c0ff3d138b8a27c7b756366b817,"138 days, 21:09:37.418283"
 414912875,-,Deploy v3.12.0,closed,383,[],"05/07/2020, 20:51:01","05/07/2020, 20:58:41","05/07/2020, 20:58:41",4041d05a660b5cd3c81b5261fac21735ac9e6fe0,0:07:40,460.0
 414912205,OPS, Release 3.12.0 of @pfizer/nextgen-web-components,closed,382,[],"05/07/2020, 20:49:25","05/07/2020, 20:50:37","05/07/2020, 20:50:37",96ce5c264390acfabfc1a82e03f82953c73bf0da,0:01:12,72.0
 414896607,-,Merge master back into develop,closed,381,[],"05/07/2020, 20:13:53","05/07/2020, 20:16:13","05/07/2020, 20:16:13",1f7843e4483d578dda41b29ea94c569dc8bd1cdd,0:02:20,140.0
@@ -163,7 +160,6 @@ id,jira_ticket,title,state,number,labels,created_at,closed_at,merged_at,merge_co
 413488640,NP-2668, - <letter-container> - Canvas Compatibility Changes,closed,369,"[Label(name=""breaking change"")]","05/05/2020, 12:35:57","05/11/2020, 15:53:06","05/11/2020, 15:53:06",0049ad397bc6aa25d3d910c5f4bc8abc52dcfbda,"6 days, 3:17:09",530229.0
 412953966,NP-2647, <nextgen-select-list-nav> Adapting nav menu to use slots and removing optional options array,closed,368,[],"05/04/2020, 13:32:09","05/06/2020, 16:24:57","05/06/2020, 16:24:57",453086984af47cd87d8872890422c19739d5dddb,"2 days, 2:52:48",183168.0
 412915520,NP-2652, - Added Styles for Product Listing,closed,367,"[Label(name=""breaking change"")]","05/04/2020, 12:16:20","05/06/2020, 16:42:43","05/06/2020, 16:42:43",4904778b39cd6407fe6214b2eb4486bd25545e36,"2 days, 4:26:23",188783.0
-412864688,NP-2662, <tab-controller> <tab-content> Does not work in Canvas,open,366,"[Label(name=""Do not merge"")]","05/04/2020, 10:24:44",,,01c6d06f4528d6c620f7dbb42c633869a5200031,"143 days, 0:14:56.418784"
 412271050,HS2-1695, Fix broken automated tests,closed,365,[],"05/01/2020, 19:39:34","05/01/2020, 20:05:30","05/01/2020, 20:05:30",e1a96fbf15aec46ddce20efed02ccb0787b618f2,0:25:56,1556.0
 412203367,NP-2640, Giant button when changing element to use a button,closed,364,[],"05/01/2020, 16:38:27","05/06/2020, 08:36:00","05/06/2020, 08:36:00",184c89d8035ae4adfd98de0af4941382405ac9eb,"4 days, 15:57:33",403053.0
 412076040,NP-2647, <nextgen-select-list-nav> Change the way in which this component takes in data,closed,363,"[Label(name=""breaking change""), Label(name=""enhancement"")]","05/01/2020, 10:21:03","05/13/2020, 19:00:32","05/13/2020, 19:00:32",1f3432d2993ef5c2204987b71918fd1b98a87281,"12 days, 8:39:29",1067969.0
@@ -211,16 +207,13 @@ id,jira_ticket,title,state,number,labels,created_at,closed_at,merged_at,merge_co
 390389768,HS2-1452, Allow the Utility Nav to render with no items,closed,321,[],"03/18/2020, 11:51:32","03/31/2020, 10:57:30","03/31/2020, 10:57:30",b34e121516c8fd4553a6bce4ffe10abfcf911a9d,"12 days, 23:05:58",1119958.0
 389993973,HS2-1456, Select List Nav: Error on page load,closed,320,[],"03/17/2020, 18:05:41","03/26/2020, 10:50:21","03/26/2020, 10:50:21",be3053f1627e673c69a33c7a3a0c2e7797250dd3,"8 days, 16:44:40",751480.0
 389781616,HS2-1374, Alternative approach for outline when using keyboard and click interaction,closed,319,[],"03/17/2020, 11:33:06","03/17/2020, 14:41:34","03/17/2020, 14:41:34",664329e0a1b03bdc9b03a0c4a6d6135b6332fae2,3:08:28,11308.0
-389392312,HS2-784," Defaulting of image names optionally and allowing path prefix, optionally.",open,318,[],"03/16/2020, 17:29:19",,,25f60fb1e0bba1ba0adfc56aba386994f63f402c,"191 days, 17:10:23.392517"
 389174157,HS2-1354, Add additional tracking for analytics.,closed,317,[],"03/16/2020, 11:39:18","03/17/2020, 17:25:28","03/17/2020, 17:25:28",c87febb21538a060a76e0a9161d961ce59668452,"1 day, 5:46:10",107170.0
 387861769,HS2-1427, Allow mobile sizing for persistent isi,closed,316,[],"03/13/2020, 16:13:06","03/26/2020, 12:48:32","03/26/2020, 12:48:32",70a1a8cde336b5201df2be9beea1d7e835afed93,"12 days, 20:35:26",1110926.0
-387797172,HS2-1422, specifier as not necessary in nextgen-modal,open,315,[],"03/13/2020, 14:10:28",,,f5bb7a07d94c152e3ef0615e7f0ab06a247270d6,"194 days, 20:29:14.392585"
 387397082,HS2-1394, POC for nextgen-floodlight component,closed,314,[],"03/12/2020, 18:11:34","03/16/2020, 10:21:32","03/16/2020, 10:21:32",b54346575a3d9758104b509cb1da0a75aafa6503,"3 days, 16:09:58",317398.0
 387244391,CHORE, Create and update more examples,closed,313,[],"03/12/2020, 13:30:10","03/27/2020, 15:55:56","03/27/2020, 15:55:56",b4b56ca19a9cb40c3939693fbe243cbd71ba4b9f,"15 days, 2:25:46",1304746.0
 386983252,-,chore: Bump version,closed,312,[],"03/12/2020, 00:36:18","03/12/2020, 00:41:35","03/12/2020, 00:41:35",be02c507e444b88c88e8badfc9ed083cc81e29e7,0:05:17,317.0
 386892947,HS2-1364, Fix both modal storybooks and remove anchor styling,closed,311,[],"03/11/2020, 19:58:16","03/12/2020, 12:03:11","03/12/2020, 12:03:11",f0dadd37935fcab16a91f266cf222f8ab635d87b,16:04:55,57895.0
 386875003,-,Add automated visual regression testing,closed,310,[],"03/11/2020, 19:19:36","04/01/2020, 20:18:20","04/01/2020, 20:18:20",51d0065c5442eb296bbf50c6d4f373aeb298cee2,"21 days, 0:58:44",1817924.0
-386826430,HS2-1256, Removing padding added on body for scroll-lock library,open,309,[],"03/11/2020, 17:31:57",,,b281954b1fb7206d658b2dca8158f37bc7aa3cd8,"196 days, 17:07:45.392724"
 386742006,HS2-1354, POC to add additional tracking for analytics.,closed,308,"[Label(name=""Do not merge"")]","03/11/2020, 14:59:14","03/16/2020, 11:39:34",,2f8722bd8ee84d0fc48a38ee7331ee2b4120a2c1,"4 days, 20:40:20",420020.0
 386670207,HS2-1374, Select list nav space bar select handling to make a selection,closed,307,"[Label(name=""Do not merge"")]","03/11/2020, 12:49:45","03/17/2020, 14:41:37","03/17/2020, 14:41:37",f5850f8e6a6f578f866191714e812b013e376309,"6 days, 1:51:52",525112.0
 386625267,HS2-1369, Resolving Mobile iOS display of outline,closed,306,"[Label(name=""Do not merge"")]","03/11/2020, 11:11:17","03/17/2020, 14:41:38","03/17/2020, 14:41:38",31e337f4e9f2e61ffe22606eb0e50a42156b3fe4,"6 days, 3:30:21",531021.0
@@ -258,8 +251,6 @@ id,jira_ticket,title,state,number,labels,created_at,closed_at,merged_at,merge_co
 381344136,HS2-998, Make caption break into two lines on Mobile,closed,274,[],"02/28/2020, 11:32:19","03/06/2020, 16:27:57","03/06/2020, 16:27:57",dcf0e8323d0434df2d91513a44c6e9b271c7f79e,"7 days, 4:55:38",622538.0
 381316952,HS2-1017,,closed,273,"[Label(name=""Awaiting QA""), Label(name=""bug"")]","02/28/2020, 10:30:20","03/02/2020, 09:03:33",,1688f64a8b0d2676530f1281f7f23317b3231920,"2 days, 22:33:13",253993.0
 381234069,HS2-992, Fixing default values of Carousel Dots,closed,272,[],"02/28/2020, 06:55:38","03/06/2020, 16:42:21","03/06/2020, 16:42:21",b84eb9a78ae4b23d778106bd80811fae9b1be1b8,"7 days, 9:46:43",640003.0
-380962226,HS2-1185, Adding functional renderer component,open,271,[],"02/27/2020, 16:56:27",,,326bea98e0ce21f2d44882a01b3d17ea562a0772,"209 days, 17:43:16.303172"
-380939937,CHORE, Updating components with usage examples.,open,270,[],"02/27/2020, 16:16:38",,,baf1b403b209743a89af3dd2e2440638c33ebe03,"209 days, 18:23:05.303187"
 380918985,HS2-1252, Self closing path in svg ,closed,269,[],"02/27/2020, 15:35:46","02/28/2020, 11:31:26","02/28/2020, 11:31:26",d180896bf2611bc23c1b223d427c1418a7cae472,19:55:40,71740.0
 380895322,HS2-1249, Expanding the persistant ISI with more visual configuration.,closed,268,[],"02/27/2020, 14:59:18","02/27/2020, 17:24:33","02/27/2020, 17:24:32",0f4aa6c3935bf7172b3f380fc3dca02674aba716,2:25:14,8714.0
 380462290,HS2-997, Allow different margin under steps for desktop and mobile,closed,267,[],"02/26/2020, 19:29:32","03/11/2020, 16:00:04","03/11/2020, 16:00:04",9d2e794dc7c5b65a697edeadf4008af2b2ab4027,"13 days, 20:30:32",1197032.0
@@ -374,8 +365,6 @@ id,jira_ticket,title,state,number,labels,created_at,closed_at,merged_at,merge_co
 358934988,HS2-340, Fix for close button on modal,closed,158,[],"01/03/2020, 10:07:51","01/03/2020, 17:20:35","01/03/2020, 17:20:35",b3a35b53d607f5caa51e4b6a8afea33d846a1796,7:12:44,25964.0
 358761603,-,Cssvars2,closed,157,[],"01/02/2020, 19:10:25","06/01/2020, 15:21:41",,afb02e40a86600e208a7838c13879cc27b743dd0,"150 days, 20:11:16",13032676.0
 358693398,HS2-338, Adaptive height for nextgen-cards,closed,156,[],"01/02/2020, 15:19:58","01/08/2020, 16:17:46","01/08/2020, 16:17:46",5aea43ce27816a5b47a5a714270b790d43d15d5a,"6 days, 0:57:48",521868.0
-358680712,-,NP-2367 - Discovery | Letter container Web Component,open,155,"[Label(name=""Do not merge""), Label(name=""POC"")]","01/02/2020, 14:41:09",,,cb5d4a4186e74c340570f0e91f793fa42947d021,"265 days, 19:58:38.661790"
-358669748,-,NP 2318 - Discovery | A to Z Web Component,open,154,"[Label(name=""Do not merge""), Label(name=""POC"")]","01/02/2020, 14:06:18",,,14e74140288287b94e4070139654cabb3954233a,"265 days, 20:33:29.661811"
 358622507,HS2-275, Rounding collapsed height of persistent isi,closed,153,[],"01/02/2020, 11:02:53","01/03/2020, 17:21:55","01/03/2020, 17:21:55",6c1fa49fbadbfd11409df5f20ae4e41e52e06d58,"1 day, 6:19:02",109142.0
 358230255,HS2-337, The NextGen card doesn't support having the image at the top.,closed,152,"[Label(name=""enhancement"")]","12/30/2019, 22:21:01","01/08/2020, 16:17:47","01/08/2020, 16:17:47",79f051c3ba6f131e9d9e261704d55a325a8413fc,"8 days, 17:56:46",755806.0
 358154270,HS2-346, Add CSS vars for background of accordion and table-accordion,closed,151,"[Label(name=""enhancement"")]","12/30/2019, 16:15:47","12/30/2019, 19:46:06","12/30/2019, 19:46:06",0867e364e7932fcb53dab615631efd1f377063b5,3:30:19,12619.0
@@ -529,4 +518,3 @@ id,jira_ticket,title,state,number,labels,created_at,closed_at,merged_at,merge_co
 315173875,NP-952, Configure fetch to pass through origin credentials by default.,closed,3,[],"09/07/2019, 07:10:13","09/07/2019, 18:38:51","09/07/2019, 18:38:51",fa478e9e91f912d1c0e6386fb3b89e5c0b60a62e,11:28:38,41318.0
 315143466,NP-952, Products are displayed in the wrong order.,closed,2,[],"09/06/2019, 23:34:34","09/07/2019, 18:38:11","09/07/2019, 18:38:11",a15cae57c90109fd4216e4205a2b414238df0d5d,19:03:37,68617.0
 312874445,No Ticket, Update to latest stencil.,closed,1,[],"08/30/2019, 20:27:37","09/09/2019, 13:03:09","09/09/2019, 13:03:09",7ef29c85d0ec85b66a676f38fd66024541650cbf,"9 days, 16:35:32",837332.0
-23523525,TEST,TEST,,,,,,,,

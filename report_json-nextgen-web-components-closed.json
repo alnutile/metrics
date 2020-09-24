@@ -1,42 +1,59 @@
 [
     {
-        "id": "481345041",
-        "jira_ticket": "NP-2602",
-        "title": " Fix to Changelog - NP2602 is in the wrong place.",
-        "state": "open",
-        "number": "530",
-        "labels": "[]",
-        "created_at": "09/07/2020, 12:26:32",
-        "closed_at": "",
-        "merged_at": "",
-        "merge_commit_sha": "f5d3dda80eeee50b2ba8c230bf005592990891f5",
-        "seconds_old": "16 days, 22:13:03.324678"
+        "id": 491608164,
+        "jira_ticket": "CHORE-0",
+        "title": " Release 8.0.0 of @pfizer/nextgen-web-components.",
+        "state": "closed",
+        "number": 534,
+        "labels": [],
+        "created_at": "09/23/2020, 08:30:46",
+        "closed_at": "09/23/2020, 09:05:21",
+        "merged_at": "09/23/2020, 09:05:20",
+        "merge_commit_sha": "2a90fb213710d9c3fcc551114658472bad3d647b",
+        "duration": "0:34:34",
+        "seconds": 2074.0
     },
     {
-        "id": "473713805",
-        "jira_ticket": "NP-2775",
-        "title": " GRV Storybook for Login.",
-        "state": "open",
-        "number": "529",
-        "labels": "[Label(name=\"Do not merge\")]",
-        "created_at": "08/26/2020, 07:37:11",
-        "closed_at": "",
-        "merged_at": "",
-        "merge_commit_sha": "530a42a90b2b36aeb150b41dd0f5825896a1b8e6",
-        "seconds_old": "29 days, 3:02:24.324695"
+        "id": 491005463,
+        "jira_ticket": "HS2-2781",
+        "title": " Port HS2-2675 to NextGen Web Components",
+        "state": "closed",
+        "number": 533,
+        "labels": [],
+        "created_at": "09/22/2020, 15:02:45",
+        "closed_at": "09/22/2020, 15:44:20",
+        "merged_at": "09/22/2020, 15:44:19",
+        "merge_commit_sha": "9e8bc8bc688bc58d620f0a2188a49136512989bb",
+        "duration": "0:41:34",
+        "seconds": 2494.0
     },
     {
-        "id": "469449528",
-        "jira_ticket": "NP-2820",
-        "title": " My Account edit professional issues fix",
-        "state": "open",
-        "number": "528",
-        "labels": "[]",
-        "created_at": "08/18/2020, 11:56:20",
-        "closed_at": "",
-        "merged_at": "",
-        "merge_commit_sha": "2b040fee30377b99849095feba5f26ef3a5bbffe",
-        "seconds_old": "36 days, 22:43:15.324711"
+        "id": 490989263,
+        "jira_ticket": "HS2-2780",
+        "title": " Upgrade to Helix Web Components 5.2.0",
+        "state": "closed",
+        "number": 532,
+        "labels": [],
+        "created_at": "09/22/2020, 14:39:35",
+        "closed_at": "09/22/2020, 15:14:01",
+        "merged_at": "09/22/2020, 15:14:01",
+        "merge_commit_sha": "4a3efc5000f1ad75d20769406a414010af018525",
+        "duration": "0:34:26",
+        "seconds": 2066.0
+    },
+    {
+        "id": 490986925,
+        "jira_ticket": "HS2-2779",
+        "title": " Port Persistent ISI display changes from Helix Extras",
+        "state": "closed",
+        "number": 531,
+        "labels": [],
+        "created_at": "09/22/2020, 14:36:17",
+        "closed_at": "09/23/2020, 08:24:27",
+        "merged_at": "09/23/2020, 08:24:27",
+        "merge_commit_sha": "0b07e7e56418c72176812e364bf95e0135d2c531",
+        "duration": "17:48:10",
+        "seconds": 64090.0
     },
     {
         "id": 467977141,
@@ -853,19 +870,6 @@
         "seconds": 240272.0
     },
     {
-        "id": "437064165",
-        "jira_ticket": "NP-2766",
-        "title": " Material listing card",
-        "state": "open",
-        "number": "470",
-        "labels": "[]",
-        "created_at": "06/19/2020, 12:05:58",
-        "closed_at": "",
-        "merged_at": "",
-        "merge_commit_sha": "d85f8634b39d46ea539c4342e912e1782a8b76d1",
-        "seconds_old": "96 days, 22:33:39.347247"
-    },
-    {
         "id": 437030406,
         "jira_ticket": "HS2-1909",
         "title": " Alternate approach to Disabled vars",
@@ -1090,19 +1094,6 @@
         "seconds": 2329.0
     },
     {
-        "id": "433130682",
-        "jira_ticket": "HS2-1889",
-        "title": " add an optional top header slot with styling",
-        "state": "open",
-        "number": "453",
-        "labels": "[]",
-        "created_at": "06/11/2020, 14:46:57",
-        "closed_at": "",
-        "merged_at": "",
-        "merge_commit_sha": "8c40c255d352c250997b44a597c7641af1d5fac1",
-        "seconds_old": "104 days, 19:52:40.347662"
-    },
-    {
         "id": 433035131,
         "jira_ticket": "HS2-1722",
         "title": " getBoundingClientRect to fix MM modal mobile positioning",
@@ -1143,19 +1134,6 @@
         "merge_commit_sha": "4e7e8cf8a35eae505f2f12a08c586751d1ca697a",
         "duration": "0:33:15",
         "seconds": 1995.0
-    },
-    {
-        "id": "431635733",
-        "jira_ticket": "NP-2825",
-        "title": " Nextgen Chart prepare for canvas",
-        "state": "open",
-        "number": "449",
-        "labels": "[]",
-        "created_at": "06/09/2020, 08:51:14",
-        "closed_at": "",
-        "merged_at": "",
-        "merge_commit_sha": "98d0fafb3f9f2a9c5a81ca13347c945a8636f46e",
-        "seconds_old": "107 days, 1:48:23.347749"
     },
     {
         "id": 431387216,
@@ -2060,19 +2038,6 @@
         "seconds": 196804.0
     },
     {
-        "id": "415236246",
-        "jira_ticket": "HS2-1696",
-        "title": " Creating nextgen-search components",
-        "state": "open",
-        "number": "384",
-        "labels": "[]",
-        "created_at": "05/08/2020, 13:30:03",
-        "closed_at": "",
-        "merged_at": "",
-        "merge_commit_sha": "99dc54291e526c0ff3d138b8a27c7b756366b817",
-        "seconds_old": "138 days, 21:09:37.418283"
-    },
-    {
         "id": 414912875,
         "jira_ticket": "-",
         "title": "Deploy v3.12.0",
@@ -2318,19 +2283,6 @@
         "merge_commit_sha": "4904778b39cd6407fe6214b2eb4486bd25545e36",
         "duration": "2 days, 4:26:23",
         "seconds": 188783.0
-    },
-    {
-        "id": "412864688",
-        "jira_ticket": "NP-2662",
-        "title": " <tab-controller> <tab-content> Does not work in Canvas",
-        "state": "open",
-        "number": "366",
-        "labels": "[Label(name=\"Do not merge\")]",
-        "created_at": "05/04/2020, 10:24:44",
-        "closed_at": "",
-        "merged_at": "",
-        "merge_commit_sha": "01c6d06f4528d6c620f7dbb42c633869a5200031",
-        "seconds_old": "143 days, 0:14:56.418784"
     },
     {
         "id": 412271050,
@@ -2998,19 +2950,6 @@
         "seconds": 11308.0
     },
     {
-        "id": "389392312",
-        "jira_ticket": "HS2-784",
-        "title": " Defaulting of image names optionally and allowing path prefix, optionally.",
-        "state": "open",
-        "number": "318",
-        "labels": "[]",
-        "created_at": "03/16/2020, 17:29:19",
-        "closed_at": "",
-        "merged_at": "",
-        "merge_commit_sha": "25f60fb1e0bba1ba0adfc56aba386994f63f402c",
-        "seconds_old": "191 days, 17:10:23.392517"
-    },
-    {
         "id": 389174157,
         "jira_ticket": "HS2-1354",
         "title": " Add additional tracking for analytics.",
@@ -3037,19 +2976,6 @@
         "merge_commit_sha": "70a1a8cde336b5201df2be9beea1d7e835afed93",
         "duration": "12 days, 20:35:26",
         "seconds": 1110926.0
-    },
-    {
-        "id": "387797172",
-        "jira_ticket": "HS2-1422",
-        "title": " specifier as not necessary in nextgen-modal",
-        "state": "open",
-        "number": "315",
-        "labels": "[]",
-        "created_at": "03/13/2020, 14:10:28",
-        "closed_at": "",
-        "merged_at": "",
-        "merge_commit_sha": "f5bb7a07d94c152e3ef0615e7f0ab06a247270d6",
-        "seconds_old": "194 days, 20:29:14.392585"
     },
     {
         "id": 387397082,
@@ -3120,19 +3046,6 @@
         "merge_commit_sha": "51d0065c5442eb296bbf50c6d4f373aeb298cee2",
         "duration": "21 days, 0:58:44",
         "seconds": 1817924.0
-    },
-    {
-        "id": "386826430",
-        "jira_ticket": "HS2-1256",
-        "title": " Removing padding added on body for scroll-lock library",
-        "state": "open",
-        "number": "309",
-        "labels": "[]",
-        "created_at": "03/11/2020, 17:31:57",
-        "closed_at": "",
-        "merged_at": "",
-        "merge_commit_sha": "b281954b1fb7206d658b2dca8158f37bc7aa3cd8",
-        "seconds_old": "196 days, 17:07:45.392724"
     },
     {
         "id": 386742006,
@@ -3662,32 +3575,6 @@
         "merge_commit_sha": "b84eb9a78ae4b23d778106bd80811fae9b1be1b8",
         "duration": "7 days, 9:46:43",
         "seconds": 640003.0
-    },
-    {
-        "id": "380962226",
-        "jira_ticket": "HS2-1185",
-        "title": " Adding functional renderer component",
-        "state": "open",
-        "number": "271",
-        "labels": "[]",
-        "created_at": "02/27/2020, 16:56:27",
-        "closed_at": "",
-        "merged_at": "",
-        "merge_commit_sha": "326bea98e0ce21f2d44882a01b3d17ea562a0772",
-        "seconds_old": "209 days, 17:43:16.303172"
-    },
-    {
-        "id": "380939937",
-        "jira_ticket": "CHORE",
-        "title": " Updating components with usage examples.",
-        "state": "open",
-        "number": "270",
-        "labels": "[]",
-        "created_at": "02/27/2020, 16:16:38",
-        "closed_at": "",
-        "merged_at": "",
-        "merge_commit_sha": "baf1b403b209743a89af3dd2e2440638c33ebe03",
-        "seconds_old": "209 days, 18:23:05.303187"
     },
     {
         "id": 380918985,
@@ -5312,32 +5199,6 @@
         "merge_commit_sha": "5aea43ce27816a5b47a5a714270b790d43d15d5a",
         "duration": "6 days, 0:57:48",
         "seconds": 521868.0
-    },
-    {
-        "id": "358680712",
-        "jira_ticket": "-",
-        "title": "NP-2367 - Discovery | Letter container Web Component",
-        "state": "open",
-        "number": "155",
-        "labels": "[Label(name=\"Do not merge\"), Label(name=\"POC\")]",
-        "created_at": "01/02/2020, 14:41:09",
-        "closed_at": "",
-        "merged_at": "",
-        "merge_commit_sha": "cb5d4a4186e74c340570f0e91f793fa42947d021",
-        "seconds_old": "265 days, 19:58:38.661790"
-    },
-    {
-        "id": "358669748",
-        "jira_ticket": "-",
-        "title": "NP 2318 - Discovery | A to Z Web Component",
-        "state": "open",
-        "number": "154",
-        "labels": "[Label(name=\"Do not merge\"), Label(name=\"POC\")]",
-        "created_at": "01/02/2020, 14:06:18",
-        "closed_at": "",
-        "merged_at": "",
-        "merge_commit_sha": "14e74140288287b94e4070139654cabb3954233a",
-        "seconds_old": "265 days, 20:33:29.661811"
     },
     {
         "id": 358622507,
@@ -7512,18 +7373,5 @@
         "merge_commit_sha": "7ef29c85d0ec85b66a676f38fd66024541650cbf",
         "duration": "9 days, 16:35:32",
         "seconds": 837332.0
-    },
-    {
-        "id": "23523525",
-        "jira_ticket": "TEST",
-        "title": "TEST",
-        "state": "",
-        "number": "",
-        "labels": "",
-        "created_at": "",
-        "closed_at": "",
-        "merged_at": "",
-        "merge_commit_sha": "",
-        "seconds_old": ""
     }
 ]

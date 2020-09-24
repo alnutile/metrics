@@ -30,7 +30,11 @@ class RepoHistory:
                                  sort="created", direction="desc"):
             self.results.append(self.transform_pr(pr))
         # return the updated list to overwrite the previous one
-        return self.update_lists(self.create_old_csv_dict(report_name), self.results)
+        writepath = f'/metrics/{report_name}'
+        if os.path.exists(writepath):
+            return self.update_lists(self.create_old_csv_dict(report_name), self.results)
+        else:
+            return self.results
 
     def get_client(self):
         return self.client
