@@ -9,6 +9,9 @@ if __name__ == "__main__":
     print(f"Getting data from Github for repo {repo}")
     results = client.handle(repo)
     print("Got data from Github creating report")
-    client = CSVReport()
-    client.process(results)
-    print("See report.csv for the results")
+    if isinstance(results, str):
+        print(results) 
+    else:
+        client = CSVReport()
+        client.process(results)
+        print("See report.csv for the results")
