@@ -29,7 +29,7 @@ class RepoHistory:
 
         if len(self.results) < 1:
             return "There are no Pull Requests"
-            
+
         return self.results
 
     def get_client(self):
@@ -51,7 +51,6 @@ class RepoHistory:
         data['created_at'] = self.set_date_to_string(pr.created_at)
         data['closed_at'] = self.set_date_to_string(pr.closed_at)
         data['merged_at'] = self.set_date_to_string(pr.merged_at)
-        print(data)
         return data
 
     def set_date_to_string(self, _date):

@@ -2,3 +2,4 @@ python-dotenv
 PyGithub
 freezegun
 numpy
+click
