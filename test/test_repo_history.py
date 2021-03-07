@@ -27,7 +27,7 @@ class TestRepoHistory(unittest.TestCase):
         client = RepoHistory()
         self.assertIsNotNone(client.token)
 
-    #@unittest.skip("Just to help with understanding the api")
+    @unittest.skip("Just to help with understanding the api")
     def test_real_api(self):
         client = RepoHistory()
         results = client.handle("friendsofcat/laravel-feature-flag")
