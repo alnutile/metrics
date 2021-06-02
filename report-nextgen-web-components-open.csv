@@ -1,0 +1,16 @@
+id,jira_ticket,title,state,number,labels,created_at,closed_at,merged_at,merge_commit_sha,duration,seconds
+481345041,NP-2602, Fix to Changelog - NP2602 is in the wrong place.,open,530,[],"09/07/2020, 12:26:32",,,f5d3dda80eeee50b2ba8c230bf005592990891f5,"17 days, 0:27:34.629728",1470454.629728
+473713805,NP-2775, GRV Storybook for Login.,open,529,"[Label(name=""Do not merge"")]","08/26/2020, 07:37:11",,,530a42a90b2b36aeb150b41dd0f5825896a1b8e6,"29 days, 5:16:55.629772",2524615.629772
+469449528,NP-2820, My Account edit professional issues fix,open,528,[],"08/18/2020, 11:56:20",,,2b040fee30377b99849095feba5f26ef3a5bbffe,"37 days, 0:57:46.629791",3200266.629791
+437064165,NP-2766, Material listing card,open,470,[],"06/19/2020, 12:05:58",,,d85f8634b39d46ea539c4342e912e1782a8b76d1,"97 days, 0:48:08.629806",8383688.629806
+433130682,HS2-1889, add an optional top header slot with styling,open,453,[],"06/11/2020, 14:46:57",,,8c40c255d352c250997b44a597c7641af1d5fac1,"104 days, 22:07:09.629822",9065229.629822
+431635733,NP-2825, Nextgen Chart prepare for canvas,open,449,[],"06/09/2020, 08:51:14",,,98d0fafb3f9f2a9c5a81ca13347c945a8636f46e,"107 days, 4:02:52.629837",9259372.629837
+415236246,HS2-1696, Creating nextgen-search components,open,384,[],"05/08/2020, 13:30:03",,,99dc54291e526c0ff3d138b8a27c7b756366b817,"138 days, 23:24:03.629851",12007443.629851
+412864688,NP-2662, <tab-controller> <tab-content> Does not work in Canvas,open,366,"[Label(name=""Do not merge"")]","05/04/2020, 10:24:44",,,01c6d06f4528d6c620f7dbb42c633869a5200031,"143 days, 2:29:22.629866",12364162.629866
+389392312,HS2-784," Defaulting of image names optionally and allowing path prefix, optionally.",open,318,[],"03/16/2020, 17:29:19",,,25f60fb1e0bba1ba0adfc56aba386994f63f402c,"191 days, 19:24:47.629884",16572287.629884
+387797172,HS2-1422, specifier as not necessary in nextgen-modal,open,315,[],"03/13/2020, 14:10:28",,,f5bb7a07d94c152e3ef0615e7f0ab06a247270d6,"194 days, 22:43:38.629902",16843418.629902
+386826430,HS2-1256, Removing padding added on body for scroll-lock library,open,309,[],"03/11/2020, 17:31:57",,,b281954b1fb7206d658b2dca8158f37bc7aa3cd8,"196 days, 19:22:09.629917",17004129.629917
+380962226,HS2-1185, Adding functional renderer component,open,271,[],"02/27/2020, 16:56:27",,,326bea98e0ce21f2d44882a01b3d17ea562a0772,"209 days, 19:57:39.629931",18129459.629931
+380939937,CHORE, Updating components with usage examples.,open,270,[],"02/27/2020, 16:16:38",,,baf1b403b209743a89af3dd2e2440638c33ebe03,"209 days, 20:37:28.629946",18131848.629946
+358680712,-,NP-2367 - Discovery | Letter container Web Component,open,155,"[Label(name=""Do not merge""), Label(name=""POC"")]","01/02/2020, 14:41:09",,,cb5d4a4186e74c340570f0e91f793fa42947d021,"265 days, 22:12:57.629959",22975977.629959
+358669748,-,NP 2318 - Discovery | A to Z Web Component,open,154,"[Label(name=""Do not merge""), Label(name=""POC"")]","01/02/2020, 14:06:18",,,14e74140288287b94e4070139654cabb3954233a,"265 days, 22:47:48.629973",22978068.629973

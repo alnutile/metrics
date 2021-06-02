@@ -18,4 +18,4 @@ if __name__ == "__main__":
     client.process(results, filename)
     output = JSONReport()
     output.process(results, filename)
-    print("See report.csv for the results")
+    print(f"See report-{filename}.csv for the results")
