@@ -48,6 +48,7 @@ class RepoHistory:
         data = {}
         data['id'] = pr.id
         data['jira_ticket'] = jira_ticket
+        data['user'] = pr.user.login
         data['title'] = pr.title.rpartition(']')[2]
         data['state'] = pr.state
         data['number'] = pr.number
