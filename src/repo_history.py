@@ -18,7 +18,7 @@ class RepoHistory:
         self.token = os.environ.get("GITHUB_ACCESS_TOKEN")
         self.client = Github(self.token)
 
-    def handle(self, repo_name, state):
+    def handle(self, repo_name, state, start, end):
         """ scan repo and get history """
         """ list repos in account """
         """ iterate on repos """
@@ -28,7 +28,10 @@ class RepoHistory:
         repo = self.get_client().get_repo(repo_name)
         for pr in repo.get_pulls(state=state,
                                  sort="created", direction="desc"):
-            self.results.append(self.transform_pr(pr))
+            data = self.transform_pr(pr)
+            if data:
+                if self.pr_in_date_range(data, start, end):
+                    self.results.append(data)
         # return the updated list to overwrite the previous one
         writepath = f'/metrics/{report_name}'
         if os.path.exists(writepath):
@@ -38,6 +41,35 @@ class RepoHistory:
 
     def get_client(self):
         return self.client
+
+    def transform_date(self, date):
+        return datetime.strptime(date, '%m/%d/%Y')
+
+    def pr_in_date_range(self, pr, start, end):
+        pr_date = datetime.strptime(pr['created_at'], '%m/%d/%Y, %H:%M:%S')
+        if not start and not end:
+            # No date filter, so allow it to be added to results
+            return True
+        if start and not end:
+            start_time = self.transform_date(start)
+            if pr_date > start_time:
+                return True
+
+        if not start and end:
+            end_time = self.transform_date(end)
+            if pr_date < end_time:
+                return True
+
+        if start and end:
+            print("There is a start and end")
+            start_time = self.transform_date(start)
+            end_time = self.transform_date(end)
+            if pr_date > start_time and pr['created_at'] < end_time:
+                return True
+
+        return False
+
+    
 
     def transform_pr(self, pr):
         if pr.title.startswith("["):
